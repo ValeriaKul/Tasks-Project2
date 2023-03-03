@@ -1,25 +1,20 @@
-import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import About from "./components/About/About";
+import Contacts from "./components/Contacts/Contacts";
+import Header from "./components/Header/Header";
+import Notes from "./components/Notes/Notes";
 
 function App() {
-  const [notes, setNotes] = useState([
-    {
-      id: 1,
-      text: "React Router DOM",
-    },
-    {
-      id: 2,
-      text: "Axios vs Fetch",
-    },
-  ]);
-
   return (
     <div className="App">
-      <h1>Temes: </h1>
-      <ul>
-        <li>{notes[0].text}</li>
-        <li>{notes[1].text}</li>
-      </ul>
+      <Header />
+      <Routes>
+        <Route element={<Notes />} path="/" />
+        <Route element={<About />} path="/about" />
+        <Route element={<Contacts />} path="/contacts" />
+        <Route element={<img src="https://feature-sliced.design/assets/images/visual_schema-ca092cc631de8c129dfb48174d0a927a.jpg" alt=""/>} path="/about/info"/>
+      </Routes>
     </div>
   );
 }

@@ -4,3 +4,8 @@ json-server --watch db.json --port 3001
 Если не запустился, то в папке api:
 npm i json-server | npm i -g json-server 
 ------
+Подключение axios
+npm i axios
+------
+Установка РЕАКТ РОУТЕР ДОМ
+npm i react-router-dom
