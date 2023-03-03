@@ -4,6 +4,8 @@ import About from "./components/About/About";
 import Contacts from "./components/Contacts/Contacts";
 import Header from "./components/Header/Header";
 import Notes from "./components/Notes/Notes";
+import AddNotePage from "./pages/AddNotePage/AddNotePage";
+import SingleNotePage from "./pages/SingleNotePage/SingleNotePage";
 
 function App() {
   return (
@@ -13,7 +15,17 @@ function App() {
         <Route element={<Notes />} path="/" />
         <Route element={<About />} path="/about" />
         <Route element={<Contacts />} path="/contacts" />
-        <Route element={<img src="https://feature-sliced.design/assets/images/visual_schema-ca092cc631de8c129dfb48174d0a927a.jpg" alt=""/>} path="/about/info"/>
+        <Route
+          element={
+            <img
+              src="https://feature-sliced.design/assets/images/visual_schema-ca092cc631de8c129dfb48174d0a927a.jpg"
+              alt=""
+            />
+          }
+          path="/about/info"
+        />
+        <Route element={<SingleNotePage />} path="/note/:id" />
+        <Route element={<AddNotePage/>} path="/addnote"/>
       </Routes>
     </div>
   );

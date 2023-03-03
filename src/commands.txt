@@ -1,3 +1,4 @@
+ЗАПУСК DB JSON
 cd api 
 json-server --watch db.json --port 3001
 ------
@@ -5,7 +6,12 @@ json-server --watch db.json --port 3001
 npm i json-server | npm i -g json-server 
 ------
 Подключение axios
+cd app
 npm i axios
 ------
+cd app
 Установка РЕАКТ РОУТЕР ДОМ
 npm i react-router-dom
+------
+cd app
+npm i react-toastify

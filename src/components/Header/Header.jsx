@@ -9,6 +9,7 @@ export default function Header() {
             <Link to = '/'>Main</Link>
             <Link to = '/about'>About us</Link>
             <Link to = '/contacts'>Contacts</Link>
+            <Link to = '/addnote'>Add New Note</Link>
          </nav>
 
     </div>

@@ -24,7 +24,7 @@ export default function Notes() {
     <div className={s.wrapper}>
         <h1>Lesson topics: </h1>
         {notes.map((note) => (
-            <Note key={note.id} title = {note.text} descr = {note.descr}/>
+            <Note key={note.id} id = {note.id} title = {note.text} descr = {note.descr}/>
         ))}
    
     </div>
